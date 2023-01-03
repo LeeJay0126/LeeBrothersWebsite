@@ -1,9 +1,11 @@
 import Nav from "../../Components/Nav/Nav";
+import Hero from "./Hero";
 
 const MainPage = () => {
     return (
-        <div className="App">
+        <div>
             <Nav/>
+            <Hero/>
         </div>
     );
 };
