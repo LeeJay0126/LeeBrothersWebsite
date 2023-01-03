@@ -1,11 +1,9 @@
-import Logo from "./Logo";
-import NavLine from "./NavLine";
+import Navbar from "./Navbar";
 
 const Nav = () => {
     return (
         <div className="Nav">
-            <Logo/>
-            {/* <NavLine /> */}
+            <Navbar />
         </div>
     );
 };
