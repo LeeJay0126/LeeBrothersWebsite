@@ -2,4 +2,5 @@
 .Logo {
     letter-spacing: 5px;
     font-size: 2rem;
+    cursor: pointer;
 }
