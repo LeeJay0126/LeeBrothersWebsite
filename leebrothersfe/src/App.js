@@ -1,10 +1,15 @@
 import './App.css';
-import Nav from './Components/Nav/Nav';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MainPage from './Pages/MainPage/MainPage';
 
 function App() {
   return (
-    <div className="App">
-      <Nav/>
+    <div className='App'>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<MainPage/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
