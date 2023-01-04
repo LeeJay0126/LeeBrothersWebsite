@@ -1,4 +1,5 @@
 import Nav from "../../Components/Nav/Nav";
+import ContentNav from "./ContentNav";
 import Hero from "./Hero";
 
 const MainPage = () => {
@@ -6,6 +7,7 @@ const MainPage = () => {
         <div>
             <Nav/>
             <Hero/>
+            <ContentNav/>
         </div>
     );
 };

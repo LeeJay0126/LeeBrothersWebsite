@@ -13,7 +13,7 @@ Font: font-family: 'Montserrat', sans-serif;
 
 */
 
-html {
+* {
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
     box-sizing: border-box;

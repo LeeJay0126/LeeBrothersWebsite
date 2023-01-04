@@ -2,6 +2,7 @@ import './Hero.css';
 
 import { IoLogoReact, IoLogoNodejs, IoLogoJavascript, IoLogoPython } from "react-icons/io5";
 import { SiMongodb } from "react-icons/si";
+import { AiFillHtml5 } from "react-icons/ai";
 
 const Hero = () => {
 
@@ -25,12 +26,11 @@ const Hero = () => {
                     <IoLogoNodejs className='heroIcons' />
                     <IoLogoJavascript className='heroIcons' />
                     <SiMongodb className='heroIcons' />
-                    {/* <IoLogoPython className='heroIcons'/>
-                <IoLogoPython className='heroIcons'/> */}
+                    <AiFillHtml5 className='heroIcons' />
                 </div>
             </div>
             <h3 className='heroTextCenter'>
-                
+                Jay Lee | Asen Lee
             </h3>
         </div>
     );
