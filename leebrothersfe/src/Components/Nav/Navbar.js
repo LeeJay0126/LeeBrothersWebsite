@@ -1,45 +1,42 @@
-import { NavLink } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
+import { FaBars } from 'react-icons/fa';
+import {
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+} from "./NavbarElements";
 import Logo from "./Logo";
-import "./navbar.css";
 
-function Navbar() {
-  const [showNavbar, setShowNavbar] = useState(false);
-
-  const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar);
-  };
-
+const Navbar = ({toggle}) => {
   return (
-    <nav className="navbar">
-      <div className="container">
-        <div className="logo">
-          <Logo />
-        </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          <div className="hamburger"></div>
-          <div className="hamburger"></div>
-          <div className="hamburger"></div>
-        </div>
-        <div className={`nav-elements  ${showNavbar && "active"}`}>
-          <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects">Projects</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <>
+      <Nav>
+        <NavbarContainer>
+          <NavLogo to="/">
+            <Logo />
+          </NavLogo>
+          <MobileIcon onClick={toggle}>
+            <FaBars />
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="project">Projects</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contact">Contact</NavLinks>
+            </NavItem>
+          </NavMenu>
+        </NavbarContainer>
+      </Nav>
+    </>
   );
-}
+};
 
 export default Navbar;
