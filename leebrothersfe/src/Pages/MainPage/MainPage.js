@@ -1,9 +1,13 @@
 import Nav from "../../Components/Nav/Nav";
+import ContentNav from "./ContentNav";
+import Hero from "./Hero";
 
 const MainPage = () => {
     return (
-        <div className="App">
+        <div>
             <Nav/>
+            <Hero/>
+            <ContentNav/>
         </div>
     );
 };
