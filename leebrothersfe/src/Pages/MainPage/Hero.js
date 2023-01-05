@@ -27,6 +27,7 @@ const Hero = () => {
                     <IoLogoJavascript className='heroIcons' />
                     <SiMongodb className='heroIcons' />
                     <AiFillHtml5 className='heroIcons' />
+                    <IoLogoPython className='heroIcons' />
                 </div>
             </div>
             <h3 className='heroTextCenter'>
