@@ -31,7 +31,7 @@ const ProjectSection = ({
   dark,
 }) => {
   return (
-    <>
+    <div>
       <ProjectContainer lightBg={lightBg} id={id}>
         <ProjectWrapper>
           <ProjectRow imgStart={imgStart}>
@@ -64,7 +64,7 @@ const ProjectSection = ({
           </ProjectRow>
         </ProjectWrapper>
       </ProjectContainer>
-    </>
+    </div>
   );
 };
 

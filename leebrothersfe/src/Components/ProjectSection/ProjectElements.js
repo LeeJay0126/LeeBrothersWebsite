@@ -23,7 +23,7 @@ export const ProjectWrapper = styled.div`
 
 export const ProjectRow = styled.div`
     display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
+    grid-auto-columns: 1fr 1fr;
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
@@ -41,7 +41,7 @@ export const Column1 = styled.div`
 export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
-    grid-area: col1;
+    grid-area: col2;
 `
 export const TextWrapper = styled.div`
     max-width: 540px;
